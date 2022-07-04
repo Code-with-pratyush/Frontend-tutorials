@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Function</title>
+</head>
+<body>
+    <script>
+        let m=  Math;
+        console.log(m);
+
+        let a=3.1437;
+        let b=89.6;
+
+        console.log("The value of a and b are", a,b);
+        console.log("The rounded value of a nad b are: ", Math.round(a),Math.round(b));
+        console.log("The 2 to the power of 3 is ", Math.pow(2,3));
+        console.log("The value of 4 square root is",Math.sqrt(4));
+
+        //ciel and floor
+        console.log("The cieling value of 5.8 is:",Math.ceil(5.8));
+        console.log("The floor value of 5.0 is:",Math.floor(5.8));
+        //abosulte value
+        console.log("The abosulte value of 5.6 is",Math.abs(5.66));
+        console.log("The abosulte value of -5.6 is",Math.abs(-5.66));
+        //Trignometric functions
+        //The values are given radians
+        console.log("The value os sin",Math.sin(Math.PI));
+        //min and max functions
+        console.log("Minimum value of 4,5,6 is:",Math.min(4,5,6));
+        console.log("Maximum value of 4,5,6 is:",Math.max(4,5,6));
+        
+        //Generating a Random number
+        //generates a number between 0 and 1 
+        let r = Math.random();
+        console.log("The value of r is:", r);
+        //generate a random number between any interval
+        let a1=1;
+        let b1=100;
+        let a1_a2=a1+(b1-a1)*Math.random();
+        console.log(a1_a2);
+
+
+
+
+
+
+    
+
+    </script>
+    
+    
+</body>
+</html>

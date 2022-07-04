@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript</title>
+    <style>
+        .btn
+        {
+            padding:10px 14px;
+            color:red;
+            border:2px solid black;
+            font-weight: bolder;
+            background-color: aquamarine;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 2px 2px 9px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a conatiner</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et fuga corporis ea reprehenderit quos aliquid delectus id, cum accusantium, maiores facere nihil, quo quibusdam quod voluptate sint doloremque voluptatibus fugiat libero molestiae nam error eius! Est eaque necessitatibus sequi ea modi perferendis delectus corporis nemo corrupti animi incidunt aliquid harum consequatur nesciunt, tempora voluptas nobis sit minus cupiditate veniam quod officiis ratione, totam a. Placeat voluptatibus, totam provident accusamus itaque impedit nostrum officia, ratione minus optio odit doloribus, quas debitis aut possimus quam vero aperiam laboriosam accusantium cum eveniet unde saepe pariatur! Id animi, eligendi pariatur voluptate quidem explicabo perferendis distinctio consequatur deserunt ducimus provident voluptas adipisci eos esse magni vero nam, laboriosam sunt blanditiis nostrum corporis soluta! Provident quia obcaecati ea quisquam nobis nostrum quam eligendi ipsa, eum tempore beatae nihil quibusdam dolorum fuga corporis tenetur expedita eaque error itaque harum quidem. Totam odio officia vero, itaque laudantium alias minus ad explicabo magni? Provident eaque in quia, explicabo quos ea laudantium ut, voluptatum distinctio harum natus cupiditate reiciendis est voluptatibus accusantium. Consectetur ad quis repellat, optio dolorem voluptatem fuga? Unde assumenda mollitia culpa nisi nostrum impedit libero ab voluptas ratione quibusdam voluptatum minus hic, consectetur nesciunt laborum corrupti. Minima libero facere quos tempore at unde eos debitis provident rerum! Quasi sint nisi quae? Eum ipsum enim quam expedita dolor temporibus nam facere error perspiciatis sit, nihil nostrum illo voluptas iure eaque!</p>
+    </div>
+    <button class="btn" ondblclick="togglehide()">Show/Hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log("Mouse inside the paragrapgh")
+        });
+        para.addEventListener('mouseout',function run(){
+            console.log("mouse outside para")
+
+        });
+
+        function togglehide()
+        {
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display!='none')
+            {
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

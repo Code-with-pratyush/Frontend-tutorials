@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inconsolata:wght@200;300;400&family=Lobster&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            border:2px solid rgb(236, 114, 114);
+            background-color: rgb(235, 241, 180);
+            border-radius: 5px;
+            margin-right: 500px;
+            margin-left: 30px;
+            padding: 10px 10px 10px 10px;
+
+        }
+        a{
+            text-decoration:none;
+            color: black;
+        }
+        a:visited{
+            background-color:aquamarine;
+        }
+        a:hover{
+            background-color: rgb(189, 223, 228);
+        }
+        a:active{
+            background-color: bisque;
+        }
+        .btn:hover{
+            font-family: 'PT Sans Narrow', sans-serif;
+            background-color: aquamarine;
+        }
+        .btn{
+            margin:2px;
+            background-color:  rgb(208, 245, 245);
+            padding: 6px;
+            border:1px solid black;
+            cursor:pointer;
+            border-radius: 4px;
+        }
+        .btn:active{
+            background-color: blue;
+        }
+        .card{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="con1">
+    <h3>This is my heading</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nostrum distinctio numquam explicabo necessitatibus nobis aperiam dolorem, ipsum, incidunt quidem unde temporibus aliquam est iusto placeat quia. Illo, sit harum.</p>
+    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="btn">Read more</a>
+    <!-- button tag is used for button introduction in css file -->
+    <button class="btn">Contact us</button>
+    <br>
+    <label for="Select from the option below">Select from the option below :</label>
+    <select name="card type" id="card">
+        <option value="Visa">Visa</option>
+        <option value="Rupay">Rupay</option>
+        <option value="Matercard">Matercard</option>
+    </select>
+    
+</div>
+    
+</body>
+</html>

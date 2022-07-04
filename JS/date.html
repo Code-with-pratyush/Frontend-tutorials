@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conatiner">
+        <!-- This is a container -->
+        Current Time: <span id="Time"></span>
+    </div>
+    <script>
+        /*console.log("This is date and time tutorial");
+        let now1=new Date(0);
+        console.log(now1);*/
+
+        let newDate=new Date(2022 , 3 , 12 , 11 ,25 , 10 ,30);
+        console.log(newDate);
+
+        let yr=newDate.getFullYear();
+        console.log("The year is: ",yr);
+         
+        let day=newDate.getDay();
+        console.log("The day is: ",day);
+
+        let min=newDate.getMinutes();
+        console.log("The min is: ",min);
+
+        let sec=newDate.getSeconds();
+        console.log("The sec is: ",sec);
+
+        setInterval(updatetime,1000);
+        function updatetime()
+        {
+            Time.innerHTML=new Date();
+        }
+        
+    </script>
+    
+</body>
+</html>

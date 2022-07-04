@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar using flex</title>
+    <style>
+        body{
+            margin:0px;
+            padding:10px;
+            background-color: black;
+            color:white;
+        }
+        li
+        {
+            list-style: none;
+            padding:20px;
+        }
+        .Navigation
+        {
+            display:flex;
+        }
+        section{ 
+            
+            border:2px solid red;
+            margin-left: 3px;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        /*section::after
+        {
+            content: "This is an content";
+        }*/
+
+
+    </style>
+</head>
+<body>
+        <nav class="Navbar">
+            <ul class="Navigation">
+                <li>Home</li>
+                <li>Help</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>This is heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, atque incidunt modi quibusdam consectetur accusamus natus soluta eligendi assumenda inventore earum cumque laborum quae molestias unde vel quod quaerat tempore hic! Ex debitis nobis velit atque rerum? Deleniti voluptate quam libero harum possimus molestiae voluptatem, quaerat doloribus, odio nam sed? Suscipit, assumenda! Corporis cum cupiditate reprehenderit illum consequuntur quas molestias aperiam nam. Totam, at praesentium autem illum a quibusdam, rerum, id esse reprehenderit aliquam sunt non. Laborum facilis cupiditate excepturi ipsam suscipit consequuntur esse, molestiae tempore nulla! Odio libero esse quis vel doloribus, praesentium ducimus dicta, accusantium nihil eum magni.</p>
+        </section>
+    
+</body>
+</html>

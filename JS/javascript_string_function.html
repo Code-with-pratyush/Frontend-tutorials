@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+</head>
+<body>
+
+    <script>
+        var str="This is a string";
+        console.log(str);
+        var position=str.indexOf('is');
+        console.log(position);
+        //gives the firt occurance of the substring
+        position=str.lastIndexOf('is');
+        console.log(position);
+        
+        //extrct a substring from a string
+        var substr=str.slice(1,5);//prints from 1 to 4
+        console.log(substr);
+        substr=str.substring(1,5);
+        console.log(substr);//The substring function can take up the negative values.
+
+        var replace=str.replace('string','pratyush');
+        console.log(replace);
+        //str remains the same even after replace 
+
+        console.log(str.toUpperCase());
+        var newstr=str.concat('New string');
+        console.log(newstr);
+
+        var string="      this    is      a    string";
+        console.log(string);
+        console.log(string.trim());
+
+        var char3=str.charCodeAt(2);
+        console.log(char3);
+    </script>
+    
+</body>
+</html>

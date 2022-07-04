@@ -1,0 +1,1 @@
+console.log("pratyush is a good boy");//if we want to use these code in differant files

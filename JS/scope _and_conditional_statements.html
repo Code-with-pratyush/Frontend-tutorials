@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditional statements</title>
+</head>
+<body>
+    <script>
+        var string="This is a string ";
+        console.log(string);
+        const a="This cannot be changed";
+        console.log(a);
+        let age = 2;
+        if(age>18)
+        {
+            console.log("You can drink beer")
+        }
+        else if(age==2){
+            console.log("You cannot drink anything");
+        }
+        else{
+            console.log("You can drink cold drink");
+        }
+
+       const player=17;
+       switch(player)
+       {
+           case 7:
+           {
+               console.log("MS Dhoni")
+               break;
+           }
+           case 17:
+           {
+               console.log("AB Devillers")
+               break;
+           }
+           case 199:
+           {
+               console.log("Phritvi Shaw")
+               break;
+           }
+           case 1:
+           {
+               console.log("KL Rahul")
+               break;
+           }
+           default:
+           {
+               console.log("Virat kohli")
+               break;
+           }
+       }
+
+
+
+    </script>
+    
+</body>
+</html>

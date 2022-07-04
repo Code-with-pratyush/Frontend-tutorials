@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <h2>This a form</h2>
+      <form action="backend.php">
+      <!-- We use name in the the input type so that the backend recoganizes -->
+      <div>Name: <input type="text" name="Name" id="name" label /></div>
+      <br />
+      <div>Role: <input type="text" name="Role" id="Role" /></div>
+      <br />
+      <div>Email: <input type="email" name="email" id="email" /></div>
+      <br />
+      <div>
+        <!-- For labeling the dropbox -->
+        <label for="car">Cars: </label>
+        <select name="car" id="car">
+          <option value="Indigo">Ingigo</option>
+          <option value="Audi">Audi</option>
+          <option value="Rolls Roylces">Rolls</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Submit now" />
+        <input type="reset" value="reset now" />
+      </div>
+      <br />
+      <div>
+        Adress: <textarea name="Adress" id="" cols="80" rows="10"></textarea>
+      </div>
+      <br />
+      <div>Date: <input type="date" /></div>
+      <br />
+      <div>Are you above 18: <input type="checkbox" name="checkbox" /></div>
+      <br />
+      <div>
+        <fieldset>
+          <legend>Gender</legend>
+          Male<input type="radio" name="Gender" /> Female
+          <input type="radio" name="Gender" />
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>

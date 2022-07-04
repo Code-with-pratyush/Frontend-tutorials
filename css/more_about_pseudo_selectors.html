@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after psuedo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:black;
+            color:white;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        header::before{
+            content:"";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            background-repeat: no-repeat;
+            position:absolute;
+            width:100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        .navigationbar
+        {
+            font-size: larger;
+            display: flex;
+        }
+        .items
+        {
+            margin:5px;
+            padding:3px;
+            list-style: none;
+        }
+        section
+        {
+            font-family: 'Fredoka One', cursive;
+            justify-content: center;
+            height: 344px;
+            align-items: center;
+            display:flex;
+            text-align: center;
+            margin: 30px 336px;
+            padding: 5px;
+            flex-direction: column;
+        }
+        h1{
+            font-family: 'Fredoka One', cursive;
+            font-size:30px;
+        }
+        /*section::after
+        {
+            content: "this is a content"
+        }
+        section::before
+        {
+            content:"This is an content"
+        }*/
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigationbar">
+                <li class="items">Home</li>
+                <li class="items">About</li>
+                <li class="items">services</li>
+                <li class="items">Help</li>
+                <li class="items">Contact us</li>
+                <li class="items">FAQ</li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section>
+        <h1>WELCOME TO CODING WORLD</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum ad quae quos officia Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, animi.</p>
+    </section>
+    <hr>
+    
+</body>
+</html>

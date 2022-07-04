@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in html</title>
+</head>
+<body>
+    <div class="container">
+        This is conatiner
+    </div>
+    <script>
+        /*let friends=new Array('Rahul','Palki','Mohit','Pradeep','Saksham','Adnan');
+        for(let i=0 ; i<=friends.length ; i++)
+        {
+            console.log(friends[i]);
+        }*/
+        //for of loops
+        let friends=new Array('Rahul','Palki','Mohit','Pradeep','Saksham','Adnan');
+        for (elements of friends)
+        {
+            console.log("Hello friend "+elements+"This is the morden way");
+        }
+
+        let employee={
+            name:"Pratyush",
+            Branch:"Artificial Intelligance and Data Science",
+            state:"Jharkhand",
+            salry:1000000,
+        }
+        //use this loops to iterate over objects in 
+        for (key in employee)
+        {
+            console.log(`The ${key} of the employee is ${employee[key]}`);
+
+        }   
+    </script>
+</body>
+</html>

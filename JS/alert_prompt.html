@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert prompt using javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is an heading</h1>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga amet perferendis natus quaerat quod libero, placeat enim nesciunt ipsa accusantium eum aliquid fugit dolor quia consectetur voluptas cum? Porro, consequatur!</p>
+        </div>
+    </div>
+    <script>
+        //alert("This is a message");//pops a message in modal window
+        /*let name=prompt("Please enter your name");
+        console.log(name);*/
+        /*let deletepos=confirm("Do you really wnat to delete the post");
+        if(deletepos)
+        {
+            //code to delete the post
+            console.log("Your post has been deleted sucessfully");
+        }
+        else{
+            //code to cancellatio of the post
+            console.log("Your post has not been deleted");
+        }*/
+        function check(age)
+        {
+            let i=0,n;
+            n=1000;
+            while(i<n)
+            {
+                prompt("Enter your age again");
+            }
+        }
+        let age=prompt("Enter your age");
+        if(age>18)
+        {
+            console.log("You are allowed to use this page");
+        }
+        else if(age<18){
+            alert("Please confirm your age!!Age should be above 18");
+            check(age);
+        }
+
+    </script>
+    
+</body>
+</html>
